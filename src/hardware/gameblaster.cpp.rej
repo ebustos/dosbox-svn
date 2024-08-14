@@ -1,0 +1,10 @@
+--- src/hardware/gameblaster.cpp	(revision 4467)
++++ src/hardware/gameblaster.cpp	(working copy)
+@@ -30,6 +30,7 @@
+ #include "mame/emu.h"
+ #include "mame/saa1099.h"
+ 
++#include "../save_state.h"
+ #define MASTER_CLOCK 7159090
+ 
+ //My mixer channel

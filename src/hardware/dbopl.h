@@ -255,6 +255,9 @@ struct Handler : public Adlib::Handler {
 	virtual void Generate( MixerChannel* chan, Bitu samples );
 	virtual void Init( Bitu rate );
 
+	virtual void SaveState( std::ostream& stream );
+	virtual void LoadState( std::istream& stream );
+
 	Handler(bool opl3Mode) : chip(opl3Mode) {
 	}
 };
